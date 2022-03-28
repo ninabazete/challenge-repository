@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play | Code Editor</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/dracula.css">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/editor.css" rel="stylesheet">
+    <link href="css/project-describe.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+
+        <a href="index.html"><img src="img/logo-play.svg" alt="Website logo" class="logo" js-logo-play></a>
+        <input type="text" placeholder="What are you looking for?" aria-label="search" class="header__play play" js-input-search>
+        <button class="profile profile__style">
+            <img src="img/d1.jpg" alt="User icon" class="profile__img">
+            <p class="profile__name">Hello, Nina</p>
+        </button>
+       
+    </header>
+
+    <main class="main">
+    
+        <section class="card-1">
+          <nav class="menu">
+            <p class="sidebar">Menu</p>
+            <div class="sidebar-links">
+              <a href="index.html" class="menu__item menu__item--ativo"><img class="icon-img" src="img/code-solid.svg">Code Editor</a>
+              <a href="community.html" class="menu__item"><img class="icon-img" src="img/user-ninja-solid.svg">Community</a>
+              <a href="https://www.freecodecamp.org/" class="menu__item"><img class="icon-img" src="img/free-code-camp-brands.svg">FreeCodeCamp</a>
+            </div>
+          </nav>
+        </section>    
+
+        <section class="editor" js-container-editor>
+          <div class="border-box" js-border-color>
+            <div class="box__editor--box" js-box-editor>
+           
+               <code type="text" contenteditable="true" class="box hljs" aria-label="Code Editor" js-editor></code>
+  
+            </div>
+          </div>
+             <input type="image" src="img/highlight-button.svg" name="submit" alt="submit" class="highlight-button" js-button-hl>
+        </section>
+
+        <form class="project-describe">
+          <p class="sidebar">About your code</p>
+          <input type="text" placeholder="Your project name" maxlength="25" aria-label="Your project name" class="sidebar-describe" js-name-project>
+          <textarea placeholder="Describe your project" maxlength="200" aria-label="Describe your project" class="sidebar-describe" js-describe-project></textarea>
+          <p class="sidebar">Personalize</p>
+
+          <fieldset class="personalize">
+            <select class="sidebar-describe" js-select-language>
+                <option value="JavaScript">JavaScript</option>
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="Markdown">Markdown</option>
+            </select>
+            <input type="color" aria-label="color" class="color-picker" value="#9307a0" js-input-color>
+          </fieldset>
+
+          <div class="project__message" js-alert-message></div>
+          <input type = "image" aria-label="Send" class="project__button button" value="Save your project" src="img/button-save.svg" js-save-button>
+        </form>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="JSON/index.js"></script>
+    <script src="JSON/community.js"></script>
+</body>
+</html>

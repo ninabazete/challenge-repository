@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play | Code Editor</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/darcula.css">
+    <link href="css/index.css" rel="stylesheet">
+    <link href="css/menu.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/editor.css" rel="stylesheet">
+    <link href="css/community.css" rel="stylesheet">
+    <link href="css/project-describe.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+
+        <a href="index.html"><img src="img/logo-play.svg" alt="Website logo" class="logo" js-logo-play></a>
+        <input type="text" placeholder="What are you looking for?" aria-label="search" class="header__play play" js-input-search>
+        <button class="profile profile__style">
+            <img src="img/d1.jpg" alt="User icon" class="profile__img">
+            <p class="profile__name">Hello, Nina</p>
+        </button>
+       
+    </header>
+
+    <main class="main">
+    
+        <section class="card-1">
+          <nav class="menu">
+            <p class="sidebar">Menu</p>
+            <div class="sidebar-links">
+              <a href="index.html" class="menu__item menu__item--ativo"><img class="icon-img" src="img/code-solid.svg">Code Editor</a>
+              <a href="community.html" class="menu__item"><img class="icon-img" src="img/user-ninja-solid.svg">Community</a>
+              <a href="https://www.freecodecamp.org/" class="menu__item"><img class="icon-img" src="img/free-code-camp-brands.svg">FreeCodeCamp</a>
+            </div>
+          </nav>
+        </section>   
+        
+        <section class="card-community" js-comu-projects>
+           
+
+           
+        </section>
+
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script src="JSON/index.js"></script>
+    <script src="JSON/community.js"></script>
+</body>
+</html>
