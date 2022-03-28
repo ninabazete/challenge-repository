@@ -1,1 +1,1 @@
-# challenge-repository
+<img src="img/logo-play.svg">
