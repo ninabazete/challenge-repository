@@ -1,0 +1,53 @@
+.box__editor--box,
+.border-editor, .border-box {
+  width: 100%;
+  height: 100%;
+}
+
+.box__editor--box {
+    width: 100%;
+    border-radius: 10px;
+    box-sizing: border-box;
+    background-color: #2c252b;
+}
+.border-box {
+  padding: 2rem;
+  border-radius: 10px;
+  background-color: #9307a0;
+}
+
+.box__editor--box {
+  display: block;  
+  background: #2c252b;
+  background-image: url(../img/highlight-icon.svg);
+  background-repeat: no-repeat;
+  background-position: 1rem 1rem;
+  background-size: 40px;
+  background-attachment: local;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-sizing: border-box;
+  font-family: var(--fonte-card); 
+  font-size: 0.87rem;
+  line-height: 1.154rem;
+  outline: none;   
+  resize: none; 
+  box-shadow: 0px 16px 24px 0px #0000003D;
+  white-space:pre-wrap;
+  overflow-y: auto;
+  overflow-wrap: break-word;
+  scrollbar-color: dark;
+  scrollbar-width: thin; 
+}
+
+.highlight-button {
+    border: none;
+    background: transparent;
+    width: 30%; 
+}
+
+code.hljs {
+  padding: 2.5rem 1rem 1rem;
+}
+

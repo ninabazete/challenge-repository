@@ -1,0 +1,29 @@
+.sidebar-describe {
+    border: 3px solid #74045b;
+    background: #74045c3a;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+
+.personalize {
+    display: flex;
+    flex-direction: column;
+    height: 70px;
+    border: none;
+    width: 100%;
+}
+
+.color-picker {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top: 15px;
+    border: 3px solid #74045b;
+    background: #74045c3a;
+}
+
+.project__button {
+    width: 100%;
+    background: transparent;
+}

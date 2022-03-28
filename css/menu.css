@@ -1,0 +1,56 @@
+.card-1 {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+}
+
+.menu {
+    width: 100%;
+} 
+
+.sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #300025  
+}
+
+.menu__item  {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.icon-img {
+    width: 10%;
+    border: 3px solid #74045b;
+    border-radius: 10px;
+    background: #74045cc4;
+    margin-right: 20px;
+    transition: 0.3s ease;
+}    
+
+.icon-img:hover {
+    background: #bb0594bb;
+}
+
+.sidebar-links {
+    position: relative;
+}
+
+@media screen and {max-width: 700px} 
+ 
+
+
+
+
